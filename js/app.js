@@ -5,7 +5,8 @@ const todoList = document.getElementById('todo-list')
 btn.addEventListener('click', doThings)
 
 function doThings(){
-    let newItem = document.createElement('li')
-    newItem = inpt.value
+    const li = document.createElement('li')
+    li.textContent = inpt.value 
     document.querySelector('ul').appendChild(li)
+    inpt.value = ''
 }
